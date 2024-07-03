@@ -1,0 +1,194 @@
+ @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+ :root {
+     --red: #ff3838;
+ }
+ 
+ * {
+     font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+     border: none;
+     text-decoration: none;
+     text-transform: capitalize;
+     transition: all 0.2s linear;
+ }
+ 
+ body {
+     background: lightpink;
+ }
+ 
+ @media (max-width: 991px) {}
+ 
+ @media (max-width: 768px) {
+     .container {
+         width: 100%;
+         margin-top: 5%;
+     }
+     .cart-item {
+         width: 90%;
+     }
+     #totalPrice {
+         width: 90%;
+         right: 5%;
+     }
+ }
+ 
+ .second,
+ .second1 {
+     margin-top: 6rem;
+     width: 70%;
+     max-width: 70%;
+     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+     border: 0.1rem solid rgba(0, 0, 0, 0.3);
+     border-radius: 0.5rem;
+ }
+ 
+ @media (max-width: 768px) {
+     .second,
+     .second1 {
+         width: 90%;
+         max-width: 90%;
+         margin: 3rem auto;
+     }
+ }
+ 
+ .imgg {
+     margin-left: 2rem;
+     margin-top: 3rem;
+     width: 20rem;
+     max-width: 100%;
+     height: auto;
+     border-radius: 1rem;
+     float: left;
+ }
+ 
+ #red {
+     margin-right: 2rem;
+     margin-top: 3rem;
+     float: right;
+ }
+ 
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-top: 10%;
+     background-color: beige;
+ }
+ 
+ .cart-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 10px;
+     width: 90%;
+     border: 3px solid black;
+     padding: 1.5rem;
+     border-radius: 3px;
+     margin-right: 20%;
+     background-color: blanchedalmond;
+ }
+ 
+ @media (min-width: 768px) {
+     .cart-item {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 60%;
+         margin-left: 65px;
+         margin-top: 40px;
+     }
+ }
+ 
+ .remove-btn {
+     background-color: red;
+     color: white;
+     border: none;
+     padding: 5px 10px;
+     cursor: pointer;
+ }
+ 
+ .quantity {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .quantity button {
+     font-size: 20px;
+     padding: 5px 10px;
+     margin-right: 10px;
+ }
+ 
+ .quantity span {
+     font-size: 18px;
+ }
+ 
+ #totalprice {
+     position: fixed;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 10px;
+     width: 18rem;
+     height: 50px;
+     border: 3px solid black;
+     padding: 10px 20px;
+     border-radius: 3px;
+     font-size: 20px;
+     font-weight: bolder;
+     cursor: pointer;
+     z-index: 999;
+     background-color: greenyellow;
+     color: black;
+     flex-direction: column;
+     margin-right: 2rem;
+ }
+ 
+ @media (min-width: 768px) {
+     #totalPrice {
+         width: 25%;
+     }
+ }
+ 
+ .btn {
+     background-color: #07de4f;
+     color: white;
+ }
+ 
+ .btn:hover {
+     background-color: #ff3838;
+ }
+ 
+ #home {
+     top: 20px;
+     right: 20px;
+ }
+ 
+ #home {
+     width: 100px;
+     height: 40px;
+     color: black;
+     background-color: white;
+     text-align: center;
+     transition: background-color 0.3s, color 0.3s;
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     border: 2px solid black;
+ }
+ 
+ #home:hover {
+     background-color: #34dbbc;
+     color: white;
+ }
+ 
+ #message {
+     font-size: 60px;
+     margin-top: 200px;
+     font-family: cursive;
+ }
